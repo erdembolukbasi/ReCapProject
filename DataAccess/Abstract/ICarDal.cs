@@ -5,14 +5,8 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarDal     // car ile ilgili veri tabanımda yapacağım opresyonlar filtreleme vs burada yazılacak
+    public interface ICarDal:IEntityRepository<Car>     // car ile ilgili veri tabanımda yapacağım opresyonlar filtreleme vs burada yazılacak
     {
-        List<Car> GetAll();
-        void Add(Car car);
-        void Update(Car car);
-        void Delete(Car car);
-        List<Car> GetAllByBrand(int brandId);
-
-
+      
     }
 }
